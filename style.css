@@ -24,9 +24,6 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  /* grid-template-areas:
-    "a a"
-    "b b"; */
 
   max-width: 1200px;
   height: 50vh;
@@ -49,7 +46,6 @@ button
 */
 
 section:first-child button:first-child {
-  /* grid-area: a; */
   justify-self: center;
   align-self: center;
 
@@ -68,7 +64,6 @@ section:first-child button:first-child {
 }
 
 section:first-child button:nth-child(2) {
-  /* grid-area: b; */
   justify-self: end;
   align-self: end;
 
