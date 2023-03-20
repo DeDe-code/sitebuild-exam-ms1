@@ -1,0 +1,106 @@
+/* 
+=========================
+global
+========================= 
+*/
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 
+=========================
+section
+========================= 
+*/
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  /* grid-template-areas:
+    "a a"
+    "b b"; */
+
+  max-width: 1200px;
+  height: 50vh;
+
+  margin: 0 auto;
+}
+
+section:first-child {
+  background: #efd592;
+}
+
+section:nth-child(2) {
+  background: #4343f9;
+}
+
+/* 
+==========================
+button
+========================== 
+*/
+
+section:first-child button:first-child {
+  /* grid-area: a; */
+  justify-self: center;
+  align-self: center;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: #efd592;
+
+  background: #242d38;
+}
+
+section:first-child button:nth-child(2) {
+  /* grid-area: b; */
+  justify-self: end;
+  align-self: end;
+
+  width: 200px;
+  height: 60px;
+
+  margin: 0 40px 40px 0;
+
+  border: 6px solid #242d38;
+
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #242d38;
+
+  background: transparent;
+}
+
+section:nth-child(2) button {
+  align-self: end;
+  justify-self: center;
+
+  width: 200px;
+  height: 60px;
+
+  margin-bottom: 40px;
+
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+  background: #4343f9;
+}
